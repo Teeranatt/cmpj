@@ -47,11 +47,16 @@ function Differentiation() {
               Differentiation
             </h2>
           </div>
-          <div className="text-center">
-            <p>exam:</p>
-            <p>h = 0.64</p>
-            <p>p = 2</p>
-          </div>
+          <Card style={{ marginTop: "20px", marginRight: "0px",margin: "10",backgroundColor: "" }}>
+        <div style={{ marginTop: "0px", marginRight: "0px",margin: "10",backgroundColor: "" }}>
+           <h5 style={{ marginTop: "50px", marginRight: "110px",margin: "50px"}} >exam:</h5>
+           <h5 style={{ marginRight: "110px",margin: "50px"}}>ใช้ Richardson Extrapolation</h5>
+           <h5 style={{ marginRight: "110px",margin: "50px"}}>สูตร ((2**p)* g(h/2)- g(h))/(2**p - 1)</h5>
+           <h5 style={{ marginRight: "110px",margin: "50px"}}>h = 0.64</h5>
+           <h5 style={{ marginRight: "110px",margin: "50px"}}>p = 2</h5>
+           <h5 style={{ marginRight: "110px",margin: "50px"}}>เมื่อแทนในสูตร ผลลัพธ์ที่ได้คือ 0.36784333333333336</h5>
+        </div>
+       </Card>
 
           <Card style={{ alignItems: "center" }}>
             <Row style={{ marginTop: "50px" }}>

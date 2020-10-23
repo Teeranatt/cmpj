@@ -17,19 +17,19 @@ import { getElimination } from "../functions/function";
 
 function Elimination() {
   const navigate = useNavigate();
-  const [a00, seta00] = useState(6);
-  const [a01, seta01] = useState(-4);
-  const [a02, seta02] = useState(1);
-  const [a10, seta10] = useState(-4);
-  const [a11, seta11] = useState(6);
-  const [a12, seta12] = useState(-4);
-  const [a20, seta20] = useState(1);
-  const [a21, seta21] = useState(-4);
-  const [a22, seta22] = useState(6);
+  const [a00, seta00] = useState();
+  const [a01, seta01] = useState();
+  const [a02, seta02] = useState();
+  const [a10, seta10] = useState();
+  const [a11, seta11] = useState();
+  const [a12, seta12] = useState();
+  const [a20, seta20] = useState();
+  const [a21, seta21] = useState();
+  const [a22, seta22] = useState();
 
-  const [b1, setb1] = useState(-14);
-  const [b2, setb2] = useState(36);
-  const [b3, setb3] = useState(6);
+  const [b1, setb1] = useState();
+  const [b2, setb2] = useState();
+  const [b3, setb3] = useState();
 
   const [x0, setx0] = useState();
   const [x1, setx1] = useState();
@@ -58,19 +58,22 @@ function Elimination() {
       <Row style={{ marginTop: "5%" }}>
         <Col sm="4"></Col>
         <Col sm="4">
-        <div className="text-center">
-           <h2 style={{ marginTop: "20px", marginRight: "20px" }}>Linear Equations</h2>
+        <div className="text">
+           <h2  align= "center"><u>Linear Equations</u></h2>
+        <Card style={{ marginTop: "20px", marginRight: "0px",margin: "10",backgroundColor: "" }}>
+        <h4 style={{ marginTop: "10px", marginLeft: "10px" }} >exam:</h4>
+        <h5 align= "center" >ใช้ Elimination Phase คำนวณเพื่อหาคำตอบของ Ax=b</h5>
+           <h5 style={{ marginTop: "70px", marginRight: "110px",margin: "50px",backgroundColor: "#B8860B" }}>
+                   A : Col1 = [ 6, -4 , 1] ,
+                 Col2 = [-4 , 6 , -4] ,
+                 Col3 = [1 , -4 , 6]  
+                  และ
+                 B : Col = [-14 , 36 , 6] 
+           </h5>
+        
+          </Card>
         </div>
-        <div className="text-center">
-           <p>exam:</p>
-           <p>A: [ [ 6 -4 1 ]
-                  [ -4 6 -4 ]
-                  [ 1 -4 6 ] ]
-           </p>
-           <p>b: [-14 36 6 ]</p>
-           
-        </div>
-          <Card style={{ alignItems: "center" }}>
+          <Card style={{ marginTop: "20px", marginRight: "0px",alignItems: "center",backgroundColor: "#B0C4DE" }}>
 
 
             <Row>
@@ -249,30 +252,41 @@ function Elimination() {
                 </Row>
               </div>
             </Row>
-            <h4 style={{ marginBottom: "10px" }}>x0: {x0}</h4>
-            <h4 style={{ marginBottom: "10px" }}>x1: {x1}</h4>
-            <h4 style={{ marginBottom: "10px" }}>x2: {x2}</h4>
-            <Row style={{ marginBottom: "30px" }}>
+            <Row style={{ marginBottom: "50px" }}>
               <Col sm="8">
-                <Button onClick={generate} color="primary">
-                  <div style={{ width: 300 }}>
-                    <h3 style={{ marginTop: "10px" }}>คำนวณ</h3>
+                <Button onClick={generate} color="success">
+                  <div style={{ width: 200 }}>
+                    <h3 style={{ marginTop: "5px" }}>คำนวณ</h3>
                   </div>
                 </Button>
               </Col>
               <Col sm="4">
-                <Button onClick={back} color="secondary">
+                <Button onClick={back} color="primary">
                   <div style={{ width: 100 }}>
-                    <h3 style={{ marginTop: "10px" }}>กลับ</h3>
+                    <h3 style={{ marginTop: "5px",marginRigth:"20" }}>กลับ</h3>
                   </div>
                 </Button>
               </Col>
             </Row>
           </Card>
+          <div>
+          <Card style={{ marginTop: "40px", marginRight: "0px",margin: "10",backgroundColor: "" }}>
+              <h4 style={{ marginTop: "10px", marginLeft: "10px" }} >คำตอบ:</h4>
+                <h4 style={{marginBottom: "10px",marginLeft:"90px" }}>
+                  x0 =  {x0}
+                  </h4>
+                  <h4 style={{marginBottom: "10px",marginLeft:"90px" }}>
+                  x1 = {x1}  
+                  </h4>
+                  <h4 style={{marginBottom: "10px",marginLeft:"90px" }}>
+                  x2 =  {x2}
+                  </h4>
+        </Card>
+        </div>
         </Col>
-
         <Col sm="4"></Col>
       </Row>
+      
     </div>
   );
 }
