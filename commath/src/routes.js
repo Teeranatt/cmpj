@@ -8,39 +8,38 @@ import Differentiation from "./views/differentiation";
 import Integration from "./views/integration";
 import RootFinding from "./views/root-finding";
 
-const routes = [
-  {
-    path: "/",
-    element: <Main />,
-  },
-  {
-    path: "commath-pj",
-    element: <Main />,
-  },
-  {
-    path: "b2s",
-    element: <B2s />,
-  },
-  {
-    path: "elimination",
-    element: <Elimination />,
-  },
-  {
-    path: "interpolation",
-    element: <Interpolation />,
-  },
-  {
-    path: "differentiation",
-    element: <Differentiation />,
-  },
-  {
-    path: "integration",
-    element: <Integration />,
-  },
-  {
-    path: "root-finding",
-    element: <RootFinding />,
-  },
+const routes = [{
+        path: "/",
+        element: < Main / > ,
+    },
+    {
+        path: "cmpj",
+        element: < Main / > ,
+    },
+    {
+        path: "b2s",
+        element: < B2s / > ,
+    },
+    {
+        path: "elimination",
+        element: < Elimination / > ,
+    },
+    {
+        path: "interpolation",
+        element: < Interpolation / > ,
+    },
+    {
+        path: "differentiation",
+        element: < Differentiation / > ,
+    },
+    {
+        path: "integration",
+        element: < Integration / > ,
+    },
+    {
+        path: "root-finding",
+        element: < RootFinding / > ,
+    },
 ];
 
 export default routes;
