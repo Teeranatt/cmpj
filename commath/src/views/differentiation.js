@@ -43,14 +43,15 @@ function Differentiation() {
         <Col sm="4"></Col>
         <Col sm="4">
           <div className="text-center">
-            <h2 style={{ marginTop: "20px", marginRight: "20px" }}>
-              Differentiation
+            <h2 style={{ marginTop: "20px" }}><u>
+              บทที่4 Differentiation</u>
             </h2>
           </div>
           <Card style={{ marginTop: "20px", marginRight: "0px",margin: "10",backgroundColor: "" }}>
         <div style={{ marginTop: "0px", marginRight: "0px",margin: "10",backgroundColor: "" }}>
-           <h5 style={{ marginTop: "50px", marginRight: "110px",margin: "50px"}} >exam:</h5>
-           <h5 style={{ marginRight: "110px",margin: "50px"}}>ใช้ Richardson Extrapolation</h5>
+           <h5 style={{ marginTop: "20px", marginRight: "110px",margin: "50px"}} >exam:</h5>
+           <h5 style={{ marginRight: "110px",margin: "50px"}}>หาค่า Central Difference Approximations: CDA</h5>
+           <h5 style={{ marginRight: "110px",margin: "50px"}}>โดยใช้ Richardson Extrapolation</h5>
            <h5 style={{ marginRight: "110px",margin: "50px"}}>สูตร ((2**p)* g(h/2)- g(h))/(2**p - 1)</h5>
            <h5 style={{ marginRight: "110px",margin: "50px"}}>h = 0.64</h5>
            <h5 style={{ marginRight: "110px",margin: "50px"}}>p = 2</h5>
@@ -58,7 +59,7 @@ function Differentiation() {
         </div>
        </Card>
 
-          <Card style={{ alignItems: "center" }}>
+          <Card style={{ marginTop: "10px",alignItems: "center" }}>
             <Row style={{ marginTop: "50px" }}>
               <Col></Col>
             </Row>
@@ -97,18 +98,18 @@ function Differentiation() {
                 </Row>
               </div>
             </Row>
-            <h4 style={{ marginBottom: "10px" }}>Result: {result}</h4>
+            <h4 style={{ marginBottom: "10px" }}>ผลลัพธ์: {result}</h4>
 
             <Row style={{ marginBottom: "30px" }}>
               <Col sm="8">
-                <Button onClick={generate} color="primary">
+                <Button onClick={generate} color="success">
                   <div style={{ width: 300 }}>
                     <h3 style={{ marginTop: "10px" }}>คำนวณ</h3>
                   </div>
                 </Button>
               </Col>
               <Col sm="4">
-                <Button onClick={back} color="secondary">
+                <Button onClick={back} color="primary">
                   <div style={{ width: 100 }}>
                     <h3 style={{ marginTop: "10px" }}>กลับ</h3>
                   </div>

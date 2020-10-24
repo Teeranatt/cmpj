@@ -30,23 +30,25 @@ function B2s() {
     };
 
     return ( <div class = "body" >
-        <Row style = {{ marginTop: "15%" } } >
+        <Row style = {{ marginTop: "10%" } } >
         <Col sm = "2" > </Col> <Col sm = "8" >
-        <div className = "text-center" >
-        <h2 style = {
-            { marginTop: "20px", marginRight: "20px" }} ><u>Basic Computing </u></h2> 
-            </div > <div style = {{ marginRight: "50px" }} >
+        <div >
+            
+        <h2 style = {{ marginTop: "20px",align : "center"}} ><u>บทที่1 Basic Computing </u></h2> 
+            </div >
+            <div style = {{ marginTop: "20px",align : "center"}} >
                 <p>แปลงตัวเลขจากเลขฐานสอง โดยใช้ IEEE single precision format</p>
         <p > exam: 01111000000001010000000000000000 </p> 
         <p>s = 0,
             e = 11110000,
             f = 00001010</p>
+            
         </div > 
         <div >
         <Row >
         <Col sm = "2" > </Col> <Col sm = "8" >
         <Card style = {
-            { alignItems: "center" }
+            { marginTop: "10px",alignItems: "center" }
         } >
         <Input style = {
             {
@@ -63,7 +65,7 @@ function B2s() {
             (e) => setBit2string(e.target.value)
         }
         /> <h4 > ผลลัพธ์: { result } </h4> <Row style = {
-            { marginBottom: "30px" }
+            { marginBottom: "30px"}
         } >
         <Col sm = "8" >
         <Button onClick = { generate }

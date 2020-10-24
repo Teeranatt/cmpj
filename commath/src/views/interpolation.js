@@ -17,19 +17,19 @@ import { getInterpolation } from "../functions/function";
 
 function Interpolation() {
   const navigate = useNavigate();
-  const [x, setx] = useState();
-  const [xi1, setxi1] = useState();
-  const [xi2, setxi2] = useState();
-  const [xi3, setxi3] = useState();
-  const [xi4, setxi4] = useState();
-  const [xi5, setxi5] = useState();
-  const [xi6, setxi6] = useState();
-  const [yi1, setyi1] = useState();
-  const [yi2, setyi2] = useState();
-  const [yi3, setyi3] = useState();
-  const [yi4, setyi4] = useState();
-  const [yi5, setyi5] = useState();
-  const [yi6, setyi6] = useState();
+  const [x, setx] = useState(5);
+  const [xi1, setxi1] = useState(0);
+  const [xi2, setxi2] = useState(8);
+  const [xi3, setxi3] = useState(14);
+  const [xi4, setxi4] = useState(20);
+  const [xi5, setxi5] = useState(23);
+  const [xi6, setxi6] = useState(30);
+  const [yi1, setyi1] = useState(0);
+  const [yi2, setyi2] = useState(50);
+  const [yi3, setyi3] = useState(96);
+  const [yi4, setyi4] = useState(110);
+  const [yi5, setyi5] = useState(100);
+  const [yi6, setyi6] = useState(86);
 
   const [result, setresult] = useState();
 
@@ -55,19 +55,21 @@ function Interpolation() {
         <Col sm="3"></Col>
         <Col sm="6">
         <div className="text-center">
-           <h2 style={{ marginTop: "20px", marginRight: "20px" }}><u>Interpolation</u></h2>
+           <h2 style={{ marginTop: "20px" }}><u>บทที่3 Interpolation</u></h2>
         </div>
         <Card style={{ marginTop: "20px", marginRight: "0px",margin: "10",backgroundColor: "" }}>
         <div style={{ marginTop: "0px", marginRight: "0px",margin: "10",backgroundColor: "" }}>
            <h5 style={{ marginTop: "50px", marginRight: "110px",margin: "50px"}} >exam:</h5>
            <h5 style={{ marginRight: "110px",margin: "50px"}}>เมื่อให้เวลาคือ t (วินาที) , ความเร็วคือ v (เมตร/วินาที)</h5>
            <h5 style={{ marginRight: "110px",margin: "50px"}}>t เป็นเวลาตามแนวนอนหรือแกน x , v เป็นความเร็วตามแนวตั้งหรือแกน y</h5>
-           <h5 style={{ marginRight: "110px",margin: "50px"}}>t ที่ต้องการหา = 5</h5>
+           <h5 style={{ marginRight: "110px",margin: "50px"}}>ถ้า t ที่ต้องการหา = 5</h5>
+           <h5 style={{ marginRight: "110px",margin: "50px"}}>ให้</h5>
            <h5 style={{ marginRight: "110px",margin: "50px"}}>t = [ 0, 8, 14, 20, 23, 30 ]</h5>
            <h5 style={{ marginRight: "110px",margin: "50px"}}>v = [ 0, 50, 96, 110, 100, 86 ]</h5>
+           <h5 style={{ marginRight: "110px",margin: "50px"}}>ความเร็ว ณ วินาทีที่ 5 เป็นเท่าใด</h5>
         </div>
        </Card>
-          <Card style={{ alignItems: "center" }}>
+          <Card style={{marginTop: "10px", alignItems: "center" }}>
             <Row style={{ marginTop: "50px" }}>
               <Col></Col>
             </Row>
@@ -259,7 +261,7 @@ function Interpolation() {
                 </Row>
               </div>
             </Row>
-                <h4 style={{ marginBottom: "10px" }}>Result: {result}</h4>
+                <h4 style={{ marginBottom: "10px" }}>ผลลัพธ์ : {result}</h4>
 
             <Row style={{ marginBottom: "30px" }}>
               <Col sm="8">
