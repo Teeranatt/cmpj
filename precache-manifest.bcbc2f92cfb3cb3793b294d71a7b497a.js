@@ -1,18 +1,18 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "31546de61636be0b221bee431a84985c",
+    "revision": "1b299258e1b8e1b1df2dce62f00c28cb",
     "url": "/cmpj/index.html"
   },
   {
-    "revision": "cba4542c1fe9a2f621a8",
-    "url": "/cmpj/static/css/2.3cf5d70f.chunk.css"
+    "revision": "4cbbd5d2ec74c96222fd",
+    "url": "/cmpj/static/css/2.2a86faee.chunk.css"
   },
   {
-    "revision": "bc026afa3352575e27e6",
+    "revision": "379814fb0e533f086dbb",
     "url": "/cmpj/static/css/main.0236d509.chunk.css"
   },
   {
-    "revision": "cba4542c1fe9a2f621a8",
+    "revision": "4cbbd5d2ec74c96222fd",
     "url": "/cmpj/static/js/2.f0dd6d56.chunk.js"
   },
   {
@@ -20,8 +20,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/cmpj/static/js/2.f0dd6d56.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "bc026afa3352575e27e6",
-    "url": "/cmpj/static/js/main.b53f0734.chunk.js"
+    "revision": "379814fb0e533f086dbb",
+    "url": "/cmpj/static/js/main.1fc3dee7.chunk.js"
   },
   {
     "revision": "cb54c49a7f6e39a665fe",
